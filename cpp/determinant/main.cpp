@@ -62,7 +62,7 @@ int main()
 	matrix[1] = r2;
 	matrix[2] = r3;
 
-	printf("%d\n", Determinant(matrix, size));
+	printf("Expected: 0\tGot: %d\n", Determinant(matrix, size));
 
 	// Test #2
 	int r4[] = { 1, -2, 3 };
@@ -73,7 +73,7 @@ int main()
 	matrix[1] = r5;
 	matrix[2] = r6;
 
-	printf("%d\n", Determinant(matrix, size));
+	printf("Expected: 258\tGot: %d\n", Determinant(matrix, size));
 	delete[] matrix;
 
 	// Test #3
@@ -90,7 +90,7 @@ int main()
 	matrix[2] = r9;
 	matrix[3] = r10;
 
-	printf("%d\n", Determinant(matrix, size));
+	printf("Expected: -9310\tGot: %d\n", Determinant(matrix, size));
 	delete[] matrix;
 
 	// Test #4
@@ -103,7 +103,7 @@ int main()
 	matrix[0] = r11;
 	matrix[1] = r12;
 
-	printf("%d\n", Determinant(matrix, size));
+	printf("Expected: 9\tGot: %d\n", Determinant(matrix, size));
 	delete[] matrix;
 
 	system("pause");
